@@ -1,0 +1,43 @@
+{
+  "name": "chatbot",
+  "version": "0.0.1",
+  "description": "A discord bot which enables ChatGPT functionality within Discord chats.",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/main.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon build/main.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devMikeyB/DicordChatGPT.git"
+  },
+  "keywords": [
+    "Discord",
+    "ChatGPT",
+    "Bot",
+    "Automation",
+    "Chat",
+    "Math",
+    "Equations",
+    "Typescript"
+  ],
+  "author": "Michael Baldwin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devMikeyB/DicordChatGPT/issues"
+  },
+  "homepage": "https://github.com/devMikeyB/DicordChatGPT#readme",
+  "devDependencies": {
+    "@types/express": "types/express",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^9.15.0"
+  }
+}
