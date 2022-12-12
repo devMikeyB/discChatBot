@@ -1,1 +1,1 @@
-console.log("Hekk")
+import "./bot"

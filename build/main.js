@@ -1,2 +1,3 @@
 "use strict";
-console.log("Hekk");
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./bot");
