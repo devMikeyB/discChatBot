@@ -38,17 +38,17 @@ export async function execute(interaction: ChatInputCommandInteraction, client: 
         const getResponse = await openai.createCompletion({
         model: "text-davinci-003",
         prompt: interaction.options.getString('question'),
-        max_tokens: 1000
+        max_tokens: 4000
     },
     {
-        timeout: 10000,
+        timeout: 100000,
     })
-    if (!getResponse) interaction.reply("Undefined response");
-    else responseText += getResponse.data.choices[0].text;
-    //responseText += getResponse.data.choices[0].text
-    interaction.reply(responseText)  
-    console.log(responseText)
-    console.log(responseText.length)
+        if (!getResponse) interaction.reply("Undefined response");
+        else responseText += getResponse.data.choices[0].text;
+            //responseText += getResponse.data.choices[0].text
+            interaction.reply(responseText)  
+            console.log(responseText)
+            console.log(responseText.length)
     }
     catch( error) {
         interaction.reply(`Error: ${error}`)
